@@ -26,8 +26,8 @@ export function Navigation() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="font-display font-bold text-xl text-foreground hover:text-accent transition-colors"
           >
             MFA
@@ -40,9 +40,7 @@ export function Navigation() {
                 key={item.name}
                 to={item.href}
                 className={`text-sm font-medium transition-colors hover:text-accent ${
-                  isActive(item.href)
-                    ? "text-accent"
-                    : "text-muted-foreground"
+                  isActive(item.href) ? "text-accent" : "text-muted-foreground"
                 }`}
               >
                 {item.name}

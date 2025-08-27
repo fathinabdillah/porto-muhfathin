@@ -24,8 +24,8 @@ const NotFound = () => {
             Page Not Found
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Sorry, the page you're looking for doesn't exist. It might have been moved,
-            deleted, or you entered the wrong URL.
+            Sorry, the page you're looking for doesn't exist. It might have been
+            moved, deleted, or you entered the wrong URL.
           </p>
         </div>
 
@@ -37,9 +37,7 @@ const NotFound = () => {
             </Link>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link to="/work">
-              View My Work
-            </Link>
+            <Link to="/work">View My Work</Link>
           </Button>
         </div>
       </div>

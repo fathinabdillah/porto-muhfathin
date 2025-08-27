@@ -10,29 +10,32 @@ export default function Index() {
       id: 1,
       title: "E-Commerce Platform Redesign",
       role: "Lead UX Designer",
-      description: "Complete redesign of a fashion e-commerce platform resulting in 40% increase in conversion rates.",
+      description:
+        "Complete redesign of a fashion e-commerce platform resulting in 40% increase in conversion rates.",
       image: "/placeholder.svg",
       tags: ["UX Research", "Prototyping", "A/B Testing"],
-      link: "/work/ecommerce-redesign"
+      link: "/work/ecommerce-redesign",
     },
     {
       id: 2,
       title: "Mobile Banking App",
       role: "Product Designer",
-      description: "Designed a secure and intuitive mobile banking experience for 100K+ users.",
+      description:
+        "Designed a secure and intuitive mobile banking experience for 100K+ users.",
       image: "/placeholder.svg",
       tags: ["Mobile Design", "User Research", "Accessibility"],
-      link: "/work/mobile-banking"
+      link: "/work/mobile-banking",
     },
     {
       id: 3,
       title: "SaaS Dashboard Interface",
       role: "UI/UX Designer",
-      description: "Created a comprehensive dashboard for data analytics with complex data visualization.",
+      description:
+        "Created a comprehensive dashboard for data analytics with complex data visualization.",
       image: "/placeholder.svg",
       tags: ["Data Visualization", "Enterprise UX", "Design System"],
-      link: "/work/saas-dashboard"
-    }
+      link: "/work/saas-dashboard",
+    },
   ];
 
   return (
@@ -47,8 +50,9 @@ export default function Index() {
               That Matter
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-              I'm Muh Fathin Abdillah, a UX/UI designer passionate about creating user-centered designs 
-              that solve real problems and drive meaningful results.
+              I'm Muh Fathin Abdillah, a UX/UI designer passionate about
+              creating user-centered designs that solve real problems and drive
+              meaningful results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="font-medium group" asChild>
@@ -57,7 +61,12 @@ export default function Index() {
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="font-medium" asChild>
+              <Button
+                variant="outline"
+                size="lg"
+                className="font-medium"
+                asChild
+              >
                 <Link to="/contact">Get In Touch</Link>
               </Button>
             </div>
@@ -73,19 +82,20 @@ export default function Index() {
               Featured Work
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A selection of projects that showcase my approach to solving complex design challenges
+              A selection of projects that showcase my approach to solving
+              complex design challenges
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project) => (
-              <Card 
-                key={project.id} 
+              <Card
+                key={project.id}
                 className="group cursor-pointer border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="aspect-video bg-muted rounded-t-lg overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -107,7 +117,7 @@ export default function Index() {
                   <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                     {project.description}
                   </p>
-                  <Link 
+                  <Link
                     to={project.link}
                     className="inline-flex items-center text-sm font-medium text-accent hover:underline"
                   >
@@ -137,15 +147,23 @@ export default function Index() {
             <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
                 Designing with purpose,
-                <span className="gradient-text block">building with passion</span>
+                <span className="gradient-text block">
+                  building with passion
+                </span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                With 5+ years of experience in UX/UI design, I specialize in creating digital experiences 
-                that are not only beautiful but also functional and user-centered. My approach combines 
+                With 5+ years of experience in UX/UI design, I specialize in
+                creating digital experiences that are not only beautiful but
+                also functional and user-centered. My approach combines
                 strategic thinking with creative problem-solving.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
-                {["User Research", "Interaction Design", "Prototyping", "Design Systems"].map((skill) => (
+                {[
+                  "User Research",
+                  "Interaction Design",
+                  "Prototyping",
+                  "Design Systems",
+                ].map((skill) => (
                   <Badge key={skill} variant="outline" className="px-3 py-1">
                     {skill}
                   </Badge>
@@ -158,7 +176,9 @@ export default function Index() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl p-8 flex items-center justify-center">
                 <div className="w-full h-full bg-muted rounded-xl flex items-center justify-center">
-                  <span className="text-muted-foreground font-medium">Profile Photo</span>
+                  <span className="text-muted-foreground font-medium">
+                    Profile Photo
+                  </span>
                 </div>
               </div>
             </div>
@@ -173,15 +193,22 @@ export default function Index() {
             Let's Create Something Amazing Together
           </h2>
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            I'm always excited to work on new projects and collaborate with passionate teams. 
-            Let's discuss how we can bring your ideas to life.
+            I'm always excited to work on new projects and collaborate with
+            passionate teams. Let's discuss how we can bring your ideas to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
               <Link to="/contact">Start a Project</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <a href="mailto:hello@muhfathin.com" className="flex items-center">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+            >
+              <a
+                href="mailto:hello@muhfathin.com"
+                className="flex items-center"
+              >
                 <span>hello@muhfathin.com</span>
               </a>
             </Button>

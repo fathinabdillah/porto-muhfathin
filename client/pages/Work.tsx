@@ -10,62 +10,68 @@ export default function Work() {
       id: 1,
       title: "E-Commerce Platform Redesign",
       role: "Lead UX Designer",
-      description: "Complete redesign of a fashion e-commerce platform resulting in 40% increase in conversion rates.",
+      description:
+        "Complete redesign of a fashion e-commerce platform resulting in 40% increase in conversion rates.",
       image: "/placeholder.svg",
       tags: ["UX Research", "Prototyping", "A/B Testing"],
       link: "/work/ecommerce-redesign",
-      year: "2024"
+      year: "2024",
     },
     {
       id: 2,
       title: "Mobile Banking App",
-      role: "Product Designer", 
-      description: "Designed a secure and intuitive mobile banking experience for 100K+ users.",
+      role: "Product Designer",
+      description:
+        "Designed a secure and intuitive mobile banking experience for 100K+ users.",
       image: "/placeholder.svg",
       tags: ["Mobile Design", "User Research", "Accessibility"],
       link: "/work/mobile-banking",
-      year: "2023"
+      year: "2023",
     },
     {
       id: 3,
       title: "SaaS Dashboard Interface",
       role: "UI/UX Designer",
-      description: "Created a comprehensive dashboard for data analytics with complex data visualization.",
-      image: "/placeholder.svg", 
+      description:
+        "Created a comprehensive dashboard for data analytics with complex data visualization.",
+      image: "/placeholder.svg",
       tags: ["Data Visualization", "Enterprise UX", "Design System"],
       link: "/work/saas-dashboard",
-      year: "2023"
+      year: "2023",
     },
     {
       id: 4,
       title: "Healthcare Patient Portal",
       role: "UX Designer",
-      description: "Designed a patient portal that improved appointment booking efficiency by 60%.",
+      description:
+        "Designed a patient portal that improved appointment booking efficiency by 60%.",
       image: "/placeholder.svg",
       tags: ["Healthcare UX", "Accessibility", "User Testing"],
-      link: "/work/healthcare-portal", 
-      year: "2022"
+      link: "/work/healthcare-portal",
+      year: "2022",
     },
     {
       id: 5,
       title: "EdTech Learning Platform",
       role: "Product Designer",
-      description: "Created an engaging learning platform for K-12 students with gamification elements.",
+      description:
+        "Created an engaging learning platform for K-12 students with gamification elements.",
       image: "/placeholder.svg",
       tags: ["EdTech", "Gamification", "Mobile First"],
       link: "/work/edtech-platform",
-      year: "2022"
+      year: "2022",
     },
     {
       id: 6,
       title: "Brand Identity System",
       role: "Brand Designer",
-      description: "Developed a comprehensive brand identity and design system for a tech startup.",
+      description:
+        "Developed a comprehensive brand identity and design system for a tech startup.",
       image: "/placeholder.svg",
       tags: ["Brand Design", "Design System", "Visual Identity"],
       link: "/work/brand-identity",
-      year: "2021"
-    }
+      year: "2021",
+    },
   ];
 
   return (
@@ -74,8 +80,8 @@ export default function Work() {
       <section className="py-16 px-6">
         <div className="container mx-auto">
           <div className="max-w-3xl">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors mb-8"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -85,8 +91,9 @@ export default function Work() {
               My Work
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              A collection of projects that showcase my design process, problem-solving approach, 
-              and the impact of user-centered design on business goals.
+              A collection of projects that showcase my design process,
+              problem-solving approach, and the impact of user-centered design
+              on business goals.
             </p>
           </div>
         </div>
@@ -97,13 +104,13 @@ export default function Work() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <Card 
-                key={project.id} 
+              <Card
+                key={project.id}
                 className="group cursor-pointer border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="aspect-video bg-muted rounded-t-lg overflow-hidden relative">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -130,7 +137,7 @@ export default function Work() {
                   <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                     {project.description}
                   </p>
-                  <Link 
+                  <Link
                     to={project.link}
                     className="inline-flex items-center text-sm font-medium text-accent hover:underline"
                   >
